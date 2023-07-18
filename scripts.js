@@ -52,3 +52,13 @@ function updateCart() {
         li.appendChild(removeButton);
     });
 }
+
+// Função para abrir o carrinho
+function viewCart() {
+    var carrinho = document.getElementById('car')
+    if (carrinho.style.display == 'block') {
+        carrinho.style.display = 'none'
+    } else {
+        carrinho.style.display = 'block'
+    }
+}

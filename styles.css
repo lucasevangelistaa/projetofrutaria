@@ -21,7 +21,7 @@ header {
 @media screen and (max-width: 520px) {
     main #cart {
         color: black;
-
+        padding: 20px;
     }
     #cart h2 {
         color: black;
@@ -31,6 +31,28 @@ header {
     }
     main > #cart button {
         width: 80px;
+    }
+    .carrinho {
+        background-color: white;
+        width: 50%;
+        z-index: 999;
+        overflow: hidden;
+        position: absolute;
+        transition: height 0.3s ease-in-out;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    span {
+        display: block;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
     }
     nav {
         text-align: center;
@@ -57,13 +79,13 @@ header {
         background-color: rgb(45, 168, 45);
         text-align: center;
         padding: 20px;
+        font-size: 5vw;
     }
     #container {
         display: flex;
         flex-wrap: wrap;
         background-color: rgb(45, 168, 45);
         padding: 20px;
-        font-size: 5vw;
     }
     #container > div {
         text-align: center;
@@ -74,6 +96,155 @@ header {
     }
     #imgcen {
         width: 100px;
+    }
+    div > p {
+        color: white;
+        padding: 5px;
+    }
+    h2 {
+        text-align: center;
+        margin: 20px;
+        border-bottom: 2px solid goldenrod;
+        color: white;
+        font-size: 5vw;
+    }
+    .flexcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        scroll-margin-top: 50px;
+    }
+    .flexcontainer > div {
+        border: 2px solid white;
+        width: 120px;
+        height: 200px;
+        margin: 10px auto;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px 0px 20px 0px;
+        box-shadow: 1px 1px 15px 1px rgba(78, 78, 78, 0.432);
+    }
+    .flexcontainer > div > img {
+        width: 120px;
+        margin: auto;
+        border-radius: 20px 0px 20px 0px;   
+    }
+    .flexcontainer > div p {
+        color: black;
+        font-size: .8rem;
+    }
+    button {
+        width: 80%;
+        padding: 5px;
+        border-radius: 15px;
+        background-color: rgba(0, 128, 0, 0.651);
+        border: none;
+        color: white;
+        margin: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        margin: 8px;
+        font-weight: bold;
+    }
+    footer {
+        background-color: rgb(45, 168, 45);
+        padding: 30px;
+        text-align: center;
+    }
+    footer > p > a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+    footer > p > a:hover {
+        border-bottom: 2px solid white;
+        transition-duration: .3s;
+        margin: 2px;
+        padding: 2px;
+    }
+}
+
+@media screen and (min-width: 521px) {
+    main #cart {
+        color: black;
+        padding: 20px;
+    }
+    #cart h2 {
+        color: black;
+    }
+    #cart p {
+        color: black;
+    }
+    main > #cart button {
+        width: 80px;
+    }
+    .carrinho {
+        background-color: white;
+        width: 50%;
+        z-index: 999;
+        overflow: hidden;
+        position: absolute;
+        transition: height 0.3s ease-in-out;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    span {
+        display: block;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+    }
+    nav {
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(186, 211, 111);
+    }
+    
+    nav > a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        margin: 5px;
+        font-weight: bold;
+    }
+    nav > a:hover {
+        border-bottom: 3px solid ;
+        transition-duration: .8s;
+        color: black;
+        font-weight: bold;
+        padding: 6px;
+        margin: 6px;
+    }
+    h1 {
+        color: white;
+        background-color: rgb(45, 168, 45);
+        text-align: center;
+        padding: 20px;
+    }
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(45, 168, 45);
+        padding: 20px;
+    }
+    #container > div {
+        text-align: center;
+        margin: auto;
+    }
+    #img {
+        width: 250px;
+    }
+    #imgcen {
+        width: 150px;
     }
     div > p {
         color: white;
@@ -133,7 +304,7 @@ header {
         color: black;
         font-size: 1.2rem;
         font-weight: bold;
-        font-family: 'Courier New', Courier, monospace;
+        font-style: italic;
     }
     footer > p > a:hover {
         border-bottom: 2px solid white;
